@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /Build/
+Disallow: /StreamingAssets/
+
+Sitemap: https://blockpuzzlegamesinc.com/woodblockdoku/sitemap.xml

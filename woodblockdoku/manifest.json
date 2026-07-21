@@ -1,0 +1,12 @@
+{
+  "name": "Woodoku - Wood Block Puzzle",
+  "short_name": "Woodoku",
+  "description": "A relaxing wood block puzzle game where you place blocks to clear lines.",
+  "start_url": "/woodblockdoku/",
+  "scope": "/woodblockdoku/",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#231F20",
+  "theme_color": "#7a3f20",
+  "categories": ["games", "entertainment"]
+}
