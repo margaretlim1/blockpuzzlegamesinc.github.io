@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /blockpuzzle/Build/
+Disallow: /blockpuzzle/StreamingAssets/
+
+# Sitemap location
+Sitemap: https://blockpuzzlegamesinc.com/blockpuzzle/sitemap.xml

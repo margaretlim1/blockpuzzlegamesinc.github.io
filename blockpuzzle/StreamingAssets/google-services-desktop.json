@@ -1,0 +1,119 @@
+{
+  "project_info": {
+    "project_number": "716895370029",
+    "firebase_url": "https://block-puzzle-d2f3b.firebaseio.com",
+    "project_id": "block-puzzle-d2f3b",
+    "storage_bucket": "block-puzzle-d2f3b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716895370029:android:f384bded7704f988",
+        "android_client_info": {
+          "package_name": "com.puzzle.cats.block.ten.ten"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716895370029-0umhqns7pjop8rdusa8cdbsj2l1m726n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2pBnUwrsJSv86KI_3BYrPbuao5qfBiEQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716895370029-0umhqns7pjop8rdusa8cdbsj2l1m726n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "716895370029-eq4ges3vpq2ujrhb0e84l6juj13mc6m5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.wood.puzzle.pro.wooden.block"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716895370029:android:c8dc2a653273dfb1",
+        "android_client_info": {
+          "package_name": "com.wooden.block.wood.ten.ten"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716895370029-0umhqns7pjop8rdusa8cdbsj2l1m726n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2pBnUwrsJSv86KI_3BYrPbuao5qfBiEQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716895370029-0umhqns7pjop8rdusa8cdbsj2l1m726n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "716895370029-eq4ges3vpq2ujrhb0e84l6juj13mc6m5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.wood.puzzle.pro.wooden.block"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716895370029:android:ddea581eaace3c30",
+        "android_client_info": {
+          "package_name": "free.games.block.puzzle.board.strategy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716895370029-0umhqns7pjop8rdusa8cdbsj2l1m726n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2pBnUwrsJSv86KI_3BYrPbuao5qfBiEQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716895370029-0umhqns7pjop8rdusa8cdbsj2l1m726n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "716895370029-eq4ges3vpq2ujrhb0e84l6juj13mc6m5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.wood.puzzle.pro.wooden.block"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

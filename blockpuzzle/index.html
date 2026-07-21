@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    
+    <!-- SEO Meta Tags -->
+    <title>Block Puzzle - Free Online Puzzle Game | Play Now</title>
+    <meta name="description" content="Play Block Puzzle online for free! A relaxing and addictive puzzle game where you place blocks to clear lines. No download required - play instantly in your browser.">
+    <meta name="keywords" content="block puzzle, puzzle game, free online game, tetris-like, brain game, casual game, html5 game, browser game">
+    <meta name="author" content="Block Puzzle Games">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://blockpuzzlegamesinc.com/blockpuzzle/">
+    <meta property="og:title" content="Block Puzzle - Free Online Puzzle Game">
+    <meta property="og:description" content="Challenge your mind with Block Puzzle! Place blocks strategically to clear lines and score points. Play free in your browser.">
+
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://blockpuzzlegamesinc.com/blockpuzzle/">
+    <meta property="twitter:title" content="Block Puzzle - Free Online Puzzle Game">
+    <meta property="twitter:description" content="Challenge your mind with Block Puzzle! Place blocks strategically to clear lines and score points.">
+
+    
+    <!-- Security Headers (add more via server/CDN config) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://blockpuzzlegamesinc.com/blockpuzzle/">
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="TemplateData/favicon.ico">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "Block Puzzle",
+        "description": "A relaxing and addictive puzzle game where you place blocks to clear lines",
+        "genre": ["Puzzle", "Casual"],
+        "playMode": "SinglePlayer",
+        "applicationCategory": "Game",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.5",
+            "ratingCount": "1000"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Block Puzzle Games"
+        }
+    }
+    </script>
+    
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            overscroll-behavior: none;
+            touch-action: none;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+        }
+
+        #gameContainer,
+        #unity-container,
+        #unity-canvas {
+            width: 100%;
+            height: 100%;
+        }
+
+        #gameContainer,
+        #unity-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        #unity-canvas {
+            display: block;
+            background: #231F20;
+            cursor: default;
+        }
+        
+        #unity-loading-bar {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+        
+        #unity-progress-bar-empty {
+            width: 141px;
+            height: 18px;
+            margin-top: 10px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 10px;
+        }
+        
+        #unity-progress-bar-full {
+            width: 0%;
+            height: 100%;
+            background: #fff;
+            border-radius: 10px;
+            transition: width 0.3s;
+        }
+        
+        .loading-text {
+            color: white;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        /* SEO Content - Hidden but crawlable */
+        .seo-content {
+            position: absolute;
+            left: -9999px;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+        
+        /* Mobile landscape optimization */
+        @media screen and (max-width: 768px) and (orientation: portrait) {
+            .rotate-message {
+                display: flex;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                justify-content: center;
+                align-items: center;
+                z-index: 9999;
+                text-align: center;
+                padding: 20px;
+            }
+        }
+        
+        @media screen and (orientation: landscape) {
+            .rotate-message {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- SEO Content for Crawlers -->
+    <div class="seo-content">
+        <h1>Block Puzzle - Free Online Puzzle Game</h1>
+        <h2>How to Play Block Puzzle</h2>
+        <p>Block Puzzle is an addictive puzzle game where you strategically place blocks on a grid to clear lines and score points. Similar to classic tetris-style games, Block Puzzle challenges your spatial reasoning and quick thinking.</p>
+        
+        <h3>Game Features:</h3>
+        <ul>
+            <li>Free to play online - no download required</li>
+            <li>Relaxing gameplay with no time pressure</li>
+            <li>Beautiful graphics and smooth animations</li>
+            <li>Track your high scores and compete with friends</li>
+            <li>Works on all devices - desktop, tablet, and mobile</li>
+        </ul>
+        
+        <h3>How to Play:</h3>
+        <ol>
+            <li>Drag and drop blocks onto the game board</li>
+            <li>Create complete horizontal or vertical lines to clear them</li>
+            <li>Clear multiple lines at once for bonus points</li>
+            <li>Game ends when you can't place any more blocks</li>
+            <li>Try to beat your high score!</li>
+        </ol>
+        
+        <p>Block Puzzle is perfect for quick gaming sessions or extended play. Whether you're looking to kill time, exercise your brain, or just relax, Block Puzzle provides endless entertainment.</p>
+    </div>
+    
+    <!-- Rotation Message for Mobile Portrait -->
+    <div class="rotate-message" style="display: none;">
+        <div>
+            <h2>📱 Please Rotate Your Device</h2>
+            <p>Block Puzzle is best played in landscape mode. Please rotate your device to continue.</p>
+        </div>
+    </div>
+    
+    <!-- Game Container -->
+    <div id="gameContainer">
+        <div id="unity-container">
+            <canvas id="unity-canvas"></canvas>
+            <div id="unity-loading-bar">
+                <div class="loading-text">Loading Block Puzzle...</div>
+                <div id="unity-progress-bar-empty">
+                    <div id="unity-progress-bar-full"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Unity WebGL Loader -->
+    <script>
+        var buildUrl = "Build";
+        var loaderUrl = buildUrl + "/ba3b52cf2145a0d544dfa9d3b19c0d21.loader.js";
+        var config = {
+            dataUrl: buildUrl + "/c0fca57d7a86d85aec9aef34f15a595d.data",
+            frameworkUrl: buildUrl + "/b5b30e23f6f705064145f52f6a9a5fed.framework.js",
+            codeUrl: buildUrl + "/4c213ec308ff1913bfa295840e290726.wasm",
+            streamingAssetsUrl: "StreamingAssets",
+            companyName: "Block Puzzle Games",
+            productName: "Block Puzzle - Free Online Puzzle Game",
+            productVersion: "10.0",
+            matchWebGLToCanvasSize: true,
+            devicePixelRatio: Math.min(window.devicePixelRatio || 1, 2)
+        };
+        
+        var container = document.querySelector("#unity-container");
+        var canvas = document.querySelector("#unity-canvas");
+        var loadingBar = document.querySelector("#unity-loading-bar");
+        var progressBarFull = document.querySelector("#unity-progress-bar-full");
+        
+        // Show loading bar
+        loadingBar.style.display = "block";
+        
+        var script = document.createElement("script");
+        script.src = loaderUrl;
+        script.onload = () => {
+            createUnityInstance(canvas, config, (progress) => {
+                progressBarFull.style.width = 100 * progress + "%";
+            }).then((unityInstance) => {
+                loadingBar.style.display = "none";
+                
+                // Ensure fullscreen landscape on mobile
+                if (window.innerWidth < 768) {
+                    canvas.addEventListener("click", () => {
+                        if (canvas.requestFullscreen) {
+                            canvas.requestFullscreen();
+                        } else if (canvas.webkitRequestFullscreen) {
+                            canvas.webkitRequestFullscreen();
+                        }
+                    }, { once: true });
+                }
+            }).catch((message) => {
+                alert(message);
+            });
+        };
+        document.body.appendChild(script);
+        
+        // Check orientation on mobile
+        function checkOrientation() {
+            var rotateMessage = document.querySelector('.rotate-message');
+            if (window.innerWidth < 768 && window.innerHeight > window.innerWidth) {
+                rotateMessage.style.display = 'flex';
+            } else {
+                rotateMessage.style.display = 'none';
+            }
+        }
+        
+        window.addEventListener('resize', checkOrientation);
+        window.addEventListener('orientationchange', checkOrientation);
+        checkOrientation();
+    </script>
+    
+    <!-- Analytics (optional) -->
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</body>
+</html>

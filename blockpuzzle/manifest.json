@@ -1,0 +1,11 @@
+{
+    "name": "Block Puzzle - Free Online Puzzle Game",
+    "short_name": "Block Puzzle",
+    "description": "A relaxing and addictive puzzle game where you place blocks to clear lines",
+    "start_url": "/blockpuzzle/",
+    "display": "fullscreen",
+    "orientation": "landscape",
+    "background_color": "#231F20",
+    "theme_color": "#667eea",
+    "categories": ["games", "entertainment"]
+}
